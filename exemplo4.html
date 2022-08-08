@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+
+    <style>
+        .grid {
+            display: inline-grid;
+            grid-template-columns: repeat(4, 25%);
+        }
+        .grid .coluna {
+            margin: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .grid img {
+            width: 100%;
+        }
+        * {
+            font-family: Arial;
+        }
+    </style>
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+    <h1>Exemplo 4</h1>
+    <div class="grid">
+        <a href="images/1g.jpg" title="Foto 1" data-lightbox="fotos" class="coluna">
+            <img src="images/1p.jpg" alt="Foto 1">
+        </a>
+        <a href="images/2g.jpg" title="Foto 2" data-lightbox="fotos" class="coluna">
+            <img src="images/2p.jpg" alt="Foto 2">
+        </a>
+        <a href="images/3g.jpg" title="Foto 3" data-lightbox="fotos" class="coluna">
+            <img src="images/3p.jpg" alt="Foto 3">
+        </a>
+        <a href="images/4g.jpg" title="Foto 4" data-lightbox="fotos" class="coluna">
+            <img src="images/4p.jpg" alt="Foto 4">
+        </a>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
